@@ -1,0 +1,276 @@
+.bodyy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 7rem;
+}
+
+.wrapper {
+    max-width: 1100px;
+    width: 100%;
+    position: relative;
+}
+
+.skills-heading {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #4a2a2a;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.wrapper i {
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.wrapper i:first-child {
+    left: -22px;
+}
+
+.wrapper i:last-child {
+    right: -55px;
+}
+
+.wrapper .carousel {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100%/3)-15px);
+    gap: 16px;
+    overflow: hidden;
+    scrollbar-width: smooth;
+}
+
+.carousel :where(.card, .img) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel.dragging .card {
+    cursor: grab;
+    user-select: none;
+}
+
+.carousel .card {
+    height: 300px;
+    width: 280px;
+    list-style: none;
+    background: #ebdbdb;
+    border-radius: 8px;
+    display: flex;
+    padding-bottom: 15px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 2rem;
+    scroll-behavior: smooth;
+    transition: transform 0.3s ease;
+}
+
+.card {
+    color: #4a2a2a;
+}
+
+.img {
+    background-color: white;
+    width: 148px;
+    height: 148px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.card .img img {
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+    object-position: center;
+    transition: filter 0.3s;
+}
+
+.proficiency-scale {
+    width: 90%;
+    height: 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: none;
+}
+
+.card:hover .proficiency-scale {
+    display: block;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #4a2a2a;
+    transition: width 0.3s ease;
+}
+
+.card h2 {
+    font-weight: 500;
+    font-size: 1.56rem;
+    margin: 30px 0 5px;
+}
+
+.card span {
+    color: #6a6d78;
+    font-size: 1.31rem;
+}
+
+.card:hover .img {
+    background-color: #4a2a2a;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover .img img {
+    filter: invert(1);
+}
+
+@media screen and (max-width: 900px) {
+    .wrapper .carousel {
+        grid-auto-columns: calc((100%/2) - 9px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .wrapper .carousel {
+        grid-auto-columns: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .skills-heading {
+        font-size: 1.5rem;
+    }
+    .carousel .card {
+        height: 250px;
+        width: 100%;
+    }
+    .wrapper i:first-child {
+        left: -10px;
+    }
+    .wrapper i:last-child {
+        right: -10px;
+    }
+    .bodyy {
+        flex-direction: column;
+        margin-top: 5rem;
+    }
+}
+
+.coding-profiles-container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.coding-profiles {
+    text-align: center;
+    position: relative;
+    padding: 20px;
+    background-color: #fff;
+    width: 150px;
+    transition: filter 0.3s ease;
+}
+
+.coding-profiles:hover {
+    background-color: #4a2a2a;
+    color: white !important;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.coding-profiles img {
+    transition: filter 0.3s ease;
+}
+
+.coding-profiles:hover img {
+    filter: brightness(0) invert(1);
+}
+
+.coding-profile-logo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    transition: transform 0.3s ease-in-out;
+}
+
+.coding-profile-logo:hover {
+    transform: scale(1.1);
+}
+
+.profile-description {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+    line-height: 1.4;
+}
+
+.profile-description:hover {
+    color: white !important;
+}
+
+#experience .skills-heading {
+    margin-bottom: 20px;
+}
+
+#experience .carousel {
+    margin-top: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .coding-profiles-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .coding-profiles {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .coding-profiles img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 1380px) {
+    #left,
+    #right {
+        margin: 0 3rem;
+        font-size: large;
+    }
+    .carousel {
+        display: grid;
+        grid-template-columns: repeat(2, calc(50% - 15px));
+        gap: 15px;
+        justify-items: center;
+        width: 100%;
+    }
+    .card {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+    }
+}
+
+#left,
+#right {
+    font-size: 3rem;
+}

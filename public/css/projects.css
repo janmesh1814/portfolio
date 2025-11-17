@@ -1,64 +1,46 @@
 .projects {
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
     gap: 1rem;
-    height: 100%;
 }
 
-.project1,
-.project2,
-.project3,
-.project4 {
+.project-box {
     display: flex;
     justify-content: space-between;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     height: 300px;
-    transition: all 0.3s ease;
+    transition: box-shadow 0.3s ease;
+}
+
+
+/* Hover shadow */
+
+.project-box:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Image transition */
+
+.pro-img {
+    width: 500px;
+    margin: 2rem;
+    transition: opacity 0.4s ease-in-out;
 }
 
 .pro-img {
     width: 500px;
     margin: 2rem;
-    transition: opacity 0.3s ease, transform 0.3s ease;
+    transition: opacity 0.4s ease-in-out;
 }
 
-.project1:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
-}
 
-.project1:hover .pro-img {
-    content: url("/styles/wanderlust.png");
-}
+/* Remove ALL hover opacity rules */
 
-.project2:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
-}
-
-.project2:hover .pro-img {
-    content: url("/styles/agrow.png");
-}
-
-.project3:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
-}
-
-.project3:hover .pro-img {
-    content: url("/styles/weather.png");
-}
-
-.project4:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
-}
-
-.project4:hover .pro-img {
-    content: url("/styles/fintrack.png");
+.project-details {
+    margin: 2rem;
 }
 
 .pro-heading {
     margin-bottom: 2rem;
-}
-
-.project-details {
-    margin: 2rem;
 }

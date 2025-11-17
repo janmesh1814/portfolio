@@ -1,16 +1,20 @@
 <div id="projects" class="section">
     <h2 class="pro-heading" style="color: #4a2a2a;">Projects</h2>
+
     <div class="projects">
-        <div class="project1">
-            <img src="/styles/wanderlustb&w.png" alt="" class="pro-img wanderlust-img">
+
+        <!-- Project 1 -->
+        <div class="project1 project-box">
+            <img src="/styles/wanderlustb&w.png" data-color="/styles/wanderlust.png" data-bw="/styles/wanderlustb&w.png" class="pro-img">
             <div class="project-details">
                 <h2 style="color: #4a2a2a;">Javascript</h2>
                 <p>Created Wanderlust, a platform similar to Airbnb, allowing users to list and manage homes or hotels, with features like real-time location tracking and advanced search filters for seamless booking experiences.</p>
-                <a href="https://wanderlust-find-your-destination.onrender.com/listings">Live
-                </a>
+                <a href="https://wanderlust-find-your-destination.onrender.com/listings">Live</a>
             </div>
         </div>
-        <div class="project2">
+
+        <!-- Project 2 -->
+        <div class="project2 project-box">
             <div class="project-details">
                 <h2 style="color: #4a2a2a;">Javascript</h2>
                 <p>FinTrack W is a full-stack finance tracker that helps users manage income and expenses with real-time dashboards and automated reports. It features Google OAuth authentication, budgeting alerts, and interactive data visualization using
@@ -18,23 +22,43 @@
                 </p>
                 <a href="https://fj-be-r2-janmesh-iiitp.onrender.com/">Live</a>
             </div>
-            <img src="/styles/fintrackb&w.png" alt="" class="pro-img agrow-img">
+            <img src="/styles/fintrackb&w.png" data-color="/styles/fintrack.png" data-bw="/styles/fintrackb&w.png" class="pro-img">
         </div>
-        <div class="project3">
+
+        <!-- Project 3 -->
+        <div class="project3 project-box">
+            <img src="/styles/agrowb&w.png" data-color="/styles/agrow.png" data-bw="/styles/agrowb&w.png" class="pro-img">
             <div class="project-details">
                 <h2 style="color: #4a2a2a;">Django</h2>
                 <p>Agrow is a multilingual, AI-powered platform that streamlines farming with features like crop health monitoring, soil analysis, government schemes, weather forecasts, and more.</p>
                 <a href="https://github.com/janmesh1814/Agrow">Live</a>
             </div>
-            <img src="/styles/agrowb&w.png" alt="" class="pro-img agrow-img">
         </div>
-        <div class="project4">
-            <img src="/styles/weatherb&w.png" alt="" class="pro-img weather-img">
+
+        <!-- Project 4 -->
+        <div class="project4 project-box">
             <div class="project-details">
                 <h2 style="color: #4a2a2a;">React</h2>
                 <p>Developed a real-time weather website using OpenWeatherMap API with dynamic background changes based on weather and time.</p>
                 <a href="https://janmesh1814.github.io/wa/">Live</a>
             </div>
+            <img src="/styles/weatherb&w.png" data-color="/styles/weather.png" data-bw="/styles/weatherb&w.png" class="pro-img">
         </div>
+
     </div>
 </div>
+<script>
+    document.querySelectorAll('.project-box').forEach(box => {
+        const img = box.querySelector('.pro-img');
+        const bw = img.dataset.bw;
+        const color = img.dataset.color;
+
+        box.addEventListener('mouseenter', () => {
+            img.src = color;
+        });
+
+        box.addEventListener('mouseleave', () => {
+            img.src = bw;
+        });
+    });
+</script>

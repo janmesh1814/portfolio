@@ -1,64 +1,87 @@
-<div id="projects" class="section">
-    <h2 class="pro-heading" style="color: #4a2a2a;">Projects</h2>
+<section id="projects" class="section projects-section">
+    <div class="container">
+        <p class="section-label reveal">What I've built</p>
+        <h2 class="section-title reveal">Projects</h2>
 
-    <div class="projects">
-
-        <!-- Project 1 -->
-        <div class="project1 project-box">
-            <img src="/styles/wanderlustb_w.png" data-color="/styles/wanderlust.png" data-bw="/styles/wanderlustb_w.png" class="pro-img">
-            <div class="project-details">
-                <h2 style="color: #4a2a2a;">Javascript</h2>
-                <p>Created Wanderlust, a platform similar to Airbnb, allowing users to list and manage homes or hotels, with features like real-time location tracking and advanced search filters for seamless booking experiences.</p>
-                <a href="https://wanderlust-find-your-destination.onrender.com/listings">Live</a>
+        <!-- Featured Project -->
+        <article class="featured-project reveal">
+            <div class="featured-image">
+                <img src="/styles/wanderlust.png" alt="Wanderlust" class="featured-img">
             </div>
-        </div>
-
-        <!-- Project 2 -->
-        <div class="project2 project-box">
-            <div class="project-details">
-                <h2 style="color: #4a2a2a;">Javascript</h2>
-                <p>FinTrack W is a full-stack finance tracker that helps users manage income and expenses with real-time dashboards and automated reports. It features Google OAuth authentication, budgeting alerts, and interactive data visualization using
-                    Chart.js.
+            <div class="featured-content">
+                <span class="featured-badge">Featured</span>
+                <h3>Wanderlust</h3>
+                <p class="featured-tagline">Airbnb-style platform for listing and booking stays</p>
+                <p class="featured-desc">
+                    A full-stack listing platform with real-time location tracking, advanced search filters, and seamless booking experiences — built end-to-end from database to deployment.
                 </p>
-                <a href="https://fj-be-r2-janmesh-iiitp.onrender.com/">Live</a>
+                <div class="featured-tags">
+                    <span class="tag">Node.js</span>
+                    <span class="tag">MongoDB</span>
+                    <span class="tag">EJS</span>
+                    <span class="tag">Mapbox</span>
+                </div>
+                <div class="featured-links">
+                    <a href="https://wanderlust-find-your-destination.onrender.com/listings" target="_blank" class="btn btn-primary btn-sm">Live Demo</a>
+                    <a href="https://github.com/janmesh1814" target="_blank" class="btn btn-outline btn-sm">GitHub</a>
+                </div>
             </div>
-            <img src="/styles/fintrackb_w.png" data-color="/styles/fintrack.png" data-bw="/styles/fintrackb_w.png" class="pro-img">
-        </div>
+        </article>
 
-        <!-- Project 3 -->
-        <div class="project3 project-box">
-            <img src="/styles/agrowb_w.png" data-color="/styles/agrow.png" data-bw="/styles/agrowb_w.png" class="pro-img">
-            <div class="project-details">
-                <h2 style="color: #4a2a2a;">Django</h2>
-                <p>Agrow is a multilingual, AI-powered platform that streamlines farming with features like crop health monitoring, soil analysis, government schemes, weather forecasts, and more.</p>
-                <a href="https://github.com/janmesh1814/Agrow">Live</a>
-            </div>
-        </div>
+        <!-- Project Grid -->
+        <div class="projects-grid">
+            <article class="project-card reveal">
+                <div class="project-card-image">
+                    <img src="/styles/monetra.jpeg" data-color="/styles/fintrack.png" alt="FinTrack" class="pro-img">
+                </div>
+                <div class="project-card-body">
+                    <h3>Monetra</h3>
+                    <p>Full-stack finance tracker with real-time dashboards, Google OAuth, budgeting alerts, and Chart.js visualizations.</p>
+                    <div class="project-card-tags">
+                        <span class="tag">Node.js</span>
+                        <span class="tag">Express</span>
+                        <span class="tag">Chart.js</span>
+                    </div>
+                    <div class="project-card-links">
+                        <a href="https://fj-be-r2-janmesh-iiitp.onrender.com/" target="_blank" class="link-arrow">Live Demo →</a>
+                    </div>
+                </div>
+            </article>
 
-        <!-- Project 4 -->
-        <div class="project4 project-box">
-            <div class="project-details">
-                <h2 style="color: #4a2a2a;">React</h2>
-                <p>Developed a real-time weather website using OpenWeatherMap API with dynamic background changes based on weather and time.</p>
-                <a href="https://janmesh1814.github.io/wa/">Live</a>
-            </div>
-            <img src="/styles/weatherb_w.png" data-color="/styles/weather.png" data-bw="/styles/weatherb_w.png" class="pro-img">
-        </div>
+            <article class="project-card reveal">
+                <div class="project-card-image">
+                    <img src="/styles/agrow.png" data-color="/styles/agrow.png" alt="Agrow" class="pro-img">
+                </div>
+                <div class="project-card-body">
+                    <h3>Agrow</h3>
+                    <p>Multilingual AI-powered farming platform with crop health monitoring, soil analysis, weather forecasts, and government schemes.</p>
+                    <div class="project-card-tags">
+                        <span class="tag">Django</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">AI/ML</span>
+                    </div>
+                    <div class="project-card-links">
+                        <a href="https://github.com/janmesh1814/Agrow" target="_blank" class="link-arrow">GitHub →</a>
+                    </div>
+                </div>
+            </article>
 
+            <article class="project-card reveal">
+                <div class="project-card-image">
+                    <img src="/styles/weather.png" data-color="/styles/weather.png" alt="WOW" class="pro-img">
+                </div>
+                <div class="project-card-body">
+                    <h3>WOW(Watch Out weather)</h3>
+                    <p>Real-time weather application with dynamic backgrounds that shift based on current weather conditions and time of day.</p>
+                    <div class="project-card-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">OpenWeather API</span>
+                    </div>
+                    <div class="project-card-links">
+                        <a href="https://janmesh1814.github.io/wa/" target="_blank" class="link-arrow">Live Demo →</a>
+                    </div>
+                </div>
+            </article>
+        </div>
     </div>
-</div>
-<script>
-    document.querySelectorAll('.project-box').forEach(box => {
-        const img = box.querySelector('.pro-img');
-        const bw = img.dataset.bw;
-        const color = img.dataset.color;
-
-        box.addEventListener('mouseenter', () => {
-            img.src = color;
-        });
-
-        box.addEventListener('mouseleave', () => {
-            img.src = bw;
-        });
-    });
-</script>
+</section>

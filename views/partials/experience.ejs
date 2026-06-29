@@ -1,91 +1,178 @@
-<div id="experience" class="section">
-    <h2 class="skills-heading">Skills</h2>
-    <div class="bodyy">
+<section id="experience" class="section experience-section">
+    <div class="container">
+        <p class="section-label reveal">Where I've worked</p>
+        <h2 class="section-title reveal">Experience</h2>
 
-        <div class="wrapper">
-            <i id="left" class="fa-solid fa-angle-left fa-fade" style="color: #4a2a2a;"></i>
-            <ul class="carousel">
-                <li class="card">
-                    <h2 style="margin-bottom: 18px; color: #4a2a2a;">Front End</h2>
-                    <div class="img">
-                        <img src="/styles/frontend.svg" alt="tchski" draggable="false">
-                    </div>
-                    <p>React, Bootstrap, Tailwind</p>
+        <div class="browser-window reveal">
+            <div class="browser-topbar">
+                <div class="browser-dots">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                </div>
+                <div class="browser-address">
+                    <i class="fa-solid fa-lock"></i>
+                    <span>janmesh.dev/experience</span>
+                </div>
+            </div>
 
-                    <div class="proficiency-scale">
-                        <div class="progress-bar" style="width: 76%;"></div>
-                    </div>
-                </li>
-                <li class="card">
-                    <h2 style="margin-bottom: 18px; color: #4a2a2a;">Back End</h2>
-                    <div class="img">
-                        <img src="/styles/backend.svg" alt="tchski" draggable="false">
-                    </div>
-                    <p>JavaScript, Node.js, Express.js</p>
+            <div class="chrome-tabs" role="tablist">
+                <button class="chrome-tab active" role="tab" data-tab="indiamart" aria-selected="true">
+                    <span class="tab-favicon indiamart"><img src="/styles/indiamart_logo.jpg" alt="IndiaMART logo" class="logo"></span>
+                    <span class="tab-title">IndiaMART</span>
+                </button>
+                <button class="chrome-tab" role="tab" data-tab="agoda" aria-selected="false">
+                    <span class="tab-favicon agoda"><img src="/styles/agoda_logo.png" alt="Agoda logo" class="logo"></span>
+                    <span class="tab-title">Agoda</span>
+                </button>
+                <button class="chrome-tab" role="tab" data-tab="ridecell" aria-selected="false">
+                    <span class="tab-favicon ridecell"><img src="/styles/ridecell_logo.jpg" alt="Ridecell logo" class="logo"></span>
+                    <span class="tab-title">Ridecell</span>
+                </button>
+                <button class="chrome-tab" role="tab" data-tab="creditsea" aria-selected="false">
+                    <span class="tab-favicon creditsea"><img src="/styles/creditsea_images.jpg" alt="CreditSea logo" class="logo"></span>
+                    <span class="tab-title">CreditSea</span>
+                </button>
+                <div class="chrome-tab new-tab">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+            </div>
 
-                    <div class="proficiency-scale">
-                        <div class="progress-bar" style="width: 85%;"></div>
-                    </div>
-                </li>
-                <li class="card">
-                    <h2 style="margin-bottom: 18px; color: #4a2a2a;">Database</h2>
-                    <div class="img">
-                        <img src="/styles/database.svg" alt="tchski" draggable="false">
-                    </div>
-                    <p>MongoDB, SQL</p>
+            <div class="chrome-panel" id="chrome-panel">
+                <div class="chrome-panel-inner">
+                    <article class="tab-panel active" id="panel-indiamart" role="tabpanel">
+                        <div class="panel-header">
+                            <div class="panel-company">
+                                <span class="panel-favicon indiamart"><img src="/styles/indiamart_logo.jpg" alt="IndiaMart logo" class="logo"></span>
+                                <div>
+                                    <h3>IndiaMART</h3>
+                                    <p class="panel-role">Associate Engineer</p>
+                                </div>
+                            </div>
+                            <span class="panel-date">Jul 2026 – Present</span>
+                        </div>
+                        <div class="panel-body collapsed">
+                            <div class="panel-body-inner">
+                                <p class="panel-desc">
+                                    Joining India's largest B2B marketplace. Building scalable features that connect millions of buyers and suppliers across the platform.
+                                </p>
+                                <ul class="panel-bullets">
+                                    <li>Incoming Associate Engineer @ IndiaMART</li>
+                                </ul>
+                                <div class="panel-tags">
+                                    <span class="tag">TBD...</span>
+                                </div>
+                            </div>
+                            <div class="panel-fade"></div>
+                        </div>
+                        <button type="button" class="panel-read-more" hidden>Read more</button>
+                    </article>
 
-                    <div class="proficiency-scale">
-                        <div class="progress-bar" style="width: 80%;"></div>
-                    </div>
-                </li>
-                <li class="card">
-                    <h2 style="margin-bottom: 18px; color: #4a2a2a;">Data Structures</h2>
-                    <div class="img">
-                        <img src="/styles/algorithm.svg" alt="tchski" draggable="false">
-                    </div>
-                    <p>Algorithms analysis</p>
+                    <article class="tab-panel" id="panel-agoda" role="tabpanel">
+                        <div class="panel-header">
+                            <div class="panel-company">
+                                <span class="panel-favicon agoda">
+                                    <img src="/styles/agoda_logo.png" alt="Agoda logo" class="logo">
+                                </span>
+                                <div>
+                                    <h3>Agoda</h3>
+                                    <p class="panel-role">Software Engineer Intern</p>
+                                </div>
+                            </div>
+                            <span class="panel-date">Jan 2026 - Jun 2026</span>
+                        </div>
+                        <div class="panel-body collapsed">
+                            <div class="panel-body-inner">
+                                <p class="panel-desc">
+                                    Worked on travel-tech products at scale. Built features that improve the booking experience for millions of users worldwide.
+                                </p>
+                                <ul class="panel-bullets">
+                                    <li>Improved location privacy handling for properties by resolving flaws in coordinate obfuscation logic that could expose exact property locations.</li>
+                                    <li>Upgraded legacy analytics tracking across 100+ event types implementing schema changes to improve event reliability and accuracy.</li>
+                                    <li>Resolved multilingual content synchronization issues across 10+ locales by redesigning property update handling, ensuring users received the latest property information across locales.</li>
+                                    <li>Fixed room-selection navigation logic by resolving DOM ID mismatches, performing RCA, and rolling out the solution under an experiment.</li>
+                                    <li>Wrote 30+ automated test scenarios using Cucumber and Playwright to improve release reliability and reduce manual QA effort</li>
+                                </ul>
+                                <div class="panel-tags">
+                                    <span class="tag">Scala</span>
+                                    <span class="tag">Akka</span>
+                                    <span class="tag">TypeScript</span>
+                                    <span class="tag">React.js</span>
+                                    <span class="tag">MySQL</span>
+                                </div>
+                            </div>
+                            <div class="panel-fade"></div>
+                        </div>
+                        <button type="button" class="panel-read-more" hidden>Read more</button>
+                    </article>
 
-                    <div class="proficiency-scale">
-                        <div class="progress-bar" style="width: 90%;"></div>
-                    </div>
-                </li>
-                <li class="card">
-                    <h2 style="margin-bottom: 18px; color: #4a2a2a;">Programming</h2>
-                    <div class="img">
-                        <img src="/styles/java.svg" alt="tchski" draggable="false">
-                    </div>
-                    <p>Java, JavaScript, Python, C++</p>
+                    <article class="tab-panel" id="panel-ridecell" role="tabpanel">
+                        <div class="panel-header">
+                            <div class="panel-company">
+                                <span class="panel-favicon ridecell"><img src="/styles/ridecell_logo.jpg" alt="Ridecell logo" class="logo"></span>
+                                <div>
+                                    <h3>Ridecell</h3>
+                                    <p class="panel-role">Software Engineer Intern</p>
+                                </div>
+                            </div>
+                            <span class="panel-date">Nov 2025 – Dec 2025</span>
+                        </div>
+                        <div class="panel-body collapsed">
+                            <div class="panel-body-inner">
+                                <p class="panel-desc">
+                                    Contributed to fleet and mobility platform development, building backend services and APIs.
+                                </p>
+                                <ul class="panel-bullets">
+                                    <li>Resolved backend data-mapping issues across 5+ projects repositories, ensuring accurate vehicle information delivery.</li>
+                                    <li>Performed root-cause analysis across Django services and PostgreSQL databases to diagnose and resolve high-priority production issues with minimal turnaround time.</li>
+                                    <li>Debugged 10+ end-to-end API and UI data flows to identify and resolve production level city data inconsistencies</li>
+                                </ul>
+                                <div class="panel-tags">
+                                    <span class="tag">Python</span>
+                                    <span class="tag">Django</span>
+                                    <span class="tag">PostgreSQL</span>
+                                </div>
+                            </div>
+                            <div class="panel-fade"></div>
+                        </div>
+                        <button type="button" class="panel-read-more" hidden>Read more</button>
+                    </article>
 
-                    <div class="proficiency-scale">
-                        <div class="progress-bar" style="width: 95%;"></div>
-                    </div>
-                </li>
-            </ul>
-            <i id="right" class="fa-solid fa-angle-right fa-fade" style="color: #4a2a2a;"></i>
+                    <article class="tab-panel" id="panel-creditsea" role="tabpanel">
+                        <div class="panel-header">
+                            <div class="panel-company">
+                                <span class="panel-favicon creditsea"><img src="/styles/creditsea_images.jpg" alt="CreditSea logo" class="logo"></span>
+                                <div>
+                                    <h3>CreditSea</h3>
+                                    <p class="panel-role">Software Engineer Intern</p>
+                                </div>
+                            </div>
+                            <span class="panel-date">May 2025 - Jul 2025</span>
+                        </div>
+                        <div class="panel-body collapsed">
+                            <div class="panel-body-inner">
+                                <p class="panel-desc">
+                                    Worked on fintech products, contributing to features that streamline credit and financial services.
+                                </p>
+                                <ul class="panel-bullets">
+                                    <li>Built a dynamic dashboard to streamline daily follow-up calls, enabling the team to achieve 70%+ outreach efficiency across 5000+ active loan customers.</li>
+                                    <li>Implemented advanced MongoDB aggregation pipelines and optimized filtering logic to speed loan data retrieval and improve risk-scoring accuracy.</li>
+                                    <li>Designed notification using typescript and Firebase SDK to keep 3+ lakh users informed about their loan application.</li>
+                                    <li>Introduced structured administrative checks and enforced mandatory remarks for loan approvals, increasing audit traceability and decision transparency</li>
+                                </ul>
+                                <div class="panel-tags">
+                                    <span class="tag">Next.js</span>
+                                    <span class="tag">Node.js</span>
+                                    <span class="tag">MongoDB</span>
+                                    <span class="tag">Express.js</span>
+                                </div>
+                            </div>
+                            <div class="panel-fade"></div>
+                        </div>
+                        <button type="button" class="panel-read-more" hidden>Read more</button>
+                    </article>
+                </div>
+            </div>
         </div>
     </div>
-
-    <div class="coding-profiles-container">
-        <div class="coding-profiles">
-            <a href="https://leetcode.com/u/__janmesh/" target="_blank">
-                <img src="/styles/leetcode.png" alt="LeetCode Profile" class="coding-profile-logo">
-            </a>
-            <p class="profile-description">
-                <p>Knight(1852)</p>
-                <p>700+ DSA</p>
-            </p>
-        </div>
-        <div class="coding-profiles">
-            <a href="https://www.codechef.com/users/ssn108" target="_blank">
-                <img src="/styles/codechef.png" alt="CodeChef Profile" class="coding-profile-logo">
-            </a>
-            <p class="profile-description">3 star Max(1641)</p>
-        </div>
-        <div class="coding-profiles">
-            <a href="https://www.naukri.com/code360/profile/janmesh" target="_blank">
-                <img src="/styles/codeforces.png" alt="CodingStudio Profile" class="coding-profile-logo">
-            </a>
-            <p class="profile-description">Master on Code360</p>
-        </div>
-    </div>
-</div>
+</section>

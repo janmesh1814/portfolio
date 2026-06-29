@@ -1,0 +1,135 @@
+:root {
+    --bg: #faf8f6;
+    --surface: #ffffff;
+    --text: #4a2a2a;
+    --text-muted: #8b7355;
+    --accent: #c45c3e;
+    --accent-dark: #4a2a2a;
+    --border: rgba(74, 42, 42, 0.12);
+    --shadow: 0 4px 24px rgba(74, 42, 42, 0.08);
+    --shadow-hover: 0 12px 40px rgba(74, 42, 42, 0.14);
+    --radius: 16px;
+    --max-width: 1100px;
+    --nav-height: 72px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    margin: 0;
+    padding-top: var(--nav-height);
+    background-color: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.section {
+    padding: 5rem 0;
+}
+
+.section-label {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+}
+
+.section-title {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: clamp(2rem, 4vw, 2.75rem);
+    font-weight: 700;
+    color: var(--text);
+    margin: 0 0 2.5rem;
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.tag {
+    display: inline-block;
+    padding: 0.25rem 0.65rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text);
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    margin: 0.15rem;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.25s ease;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-primary {
+    color: var(--surface);
+    background: var(--accent-dark);
+}
+
+.btn-primary:hover {
+    background: var(--accent);
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    color: var(--text);
+    background: transparent;
+    border: 2px solid var(--text);
+}
+
+.btn-outline:hover {
+    color: var(--surface);
+    background: var(--text);
+}
+
+.btn-sm {
+    padding: 0.45rem 1rem;
+    font-size: 0.85rem;
+}
+
+.link-arrow {
+    color: var(--accent);
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.link-arrow:hover {
+    text-decoration: underline;
+}

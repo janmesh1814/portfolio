@@ -1,0 +1,89 @@
+.achievements-section {
+    background: var(--bg);
+}
+
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+}
+
+.achievement-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.75rem 1.25rem;
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.achievement-card:hover {
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-4px);
+}
+
+.achievement-icon {
+    width: 48px;
+    height: 48px;
+    margin: 0 auto 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.achievement-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.hackathon-icon,
+.tech-icon {
+    font-size: 2rem;
+    color: var(--accent);
+}
+
+.achievement-stat {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: var(--text);
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+.achievement-stat.text-stat {
+    font-size: 1.75rem;
+    color: var(--accent);
+}
+
+.achievement-card h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0 0 0.35rem;
+    color: var(--text);
+}
+
+.achievement-detail {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin: 0 0 1rem;
+    line-height: 1.5;
+}
+
+.achievement-card .link-arrow {
+    font-size: 0.85rem;
+}
+
+@media (max-width: 1000px) {
+    .achievements-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .achievements-grid {
+        grid-template-columns: 1fr;
+    }
+}
